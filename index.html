@@ -8,60 +8,50 @@
 <style>
 *{box-sizing:border-box;margin:0;padding:0;font-family:Arial,sans-serif}
 
-body{
-    background:#000;
-    color:white;
-}
+body{background:#000;color:white}
 
 .hero{
-    min-height:100vh;
-    padding:45px 20px;
-    background:
-    linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.94)),
-    url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=90");
-    background-size:cover;
-    background-position:center;
+min-height:100vh;
+padding:45px 20px;
+background:
+linear-gradient(rgba(0,0,0,.62),rgba(0,0,0,.94)),
+url("https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1400&q=90");
+background-size:cover;
+background-position:center;
 }
 
-.container{
-    max-width:650px;
-    margin:auto;
-    text-align:center;
-}
+.container{max-width:650px;margin:auto;text-align:center}
 
-.coroa{
-    color:#d4af37;
-    font-size:45px;
-}
+.coroa{color:#d4af37;font-size:45px}
 
 .logo{
-    color:#d4af37;
-    font-size:70px;
-    font-weight:900;
-    font-style:italic;
-    letter-spacing:5px;
-    text-shadow:0 0 20px #d4af37;
+color:#d4af37;
+font-size:70px;
+font-weight:900;
+font-style:italic;
+letter-spacing:5px;
+text-shadow:0 0 20px #d4af37
 }
 
 .frase{
-    margin:12px 0 25px;
-    letter-spacing:4px;
-    font-size:15px;
+margin:12px 0 25px;
+letter-spacing:4px;
+font-size:15px
 }
 
 .linha{
-    height:2px;
-    background:#d4af37;
-    margin-bottom:30px;
+height:2px;
+background:#d4af37;
+margin-bottom:30px
 }
 
 .botao{
-    width:100%;
-    padding:23px;
-    margin:17px 0;
-    border-radius:25px;
-    background:rgba(0,0,0,.85);
-    cursor:pointer;
+width:100%;
+padding:23px;
+margin:17px 0;
+border-radius:25px;
+background:rgba(0,0,0,.85);
+cursor:pointer
 }
 
 .botao h2{font-size:25px}
@@ -80,71 +70,71 @@ body{
 .ponto h2{color:#00e676}
 
 .janela{
-    display:none;
-    position:fixed;
-    inset:0;
-    background:rgba(0,0,0,.9);
-    align-items:center;
-    justify-content:center;
-    padding:20px;
-    z-index:10;
+display:none;
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.9);
+align-items:center;
+justify-content:center;
+padding:20px;
+z-index:10
 }
 
 .caixa{
-    width:100%;
-    max-width:450px;
-    background:#090909;
-    border:2px solid #d4af37;
-    border-radius:20px;
-    padding:25px;
+width:100%;
+max-width:450px;
+background:#090909;
+border:2px solid #d4af37;
+border-radius:20px;
+padding:25px
 }
 
 .caixa h2{
-    color:#d4af37;
-    margin-bottom:20px;
-    text-align:center;
+color:#d4af37;
+margin-bottom:20px;
+text-align:center
 }
 
 input{
-    width:100%;
-    padding:15px;
-    margin:8px 0;
-    border-radius:10px;
-    border:1px solid #555;
-    background:#151515;
-    color:white;
+width:100%;
+padding:15px;
+margin:8px 0;
+border-radius:10px;
+border:1px solid #555;
+background:#151515;
+color:white
 }
 
 .enviar{
-    width:100%;
-    padding:15px;
-    margin-top:12px;
-    border:0;
-    border-radius:10px;
-    background:#d4af37;
-    font-weight:bold;
+width:100%;
+padding:15px;
+margin-top:12px;
+border:0;
+border-radius:10px;
+background:#d4af37;
+font-weight:bold
 }
 
 .fechar{
-    margin-top:12px;
-    width:100%;
-    padding:12px;
-    background:#222;
-    color:white;
-    border:0;
-    border-radius:10px;
+margin-top:12px;
+width:100%;
+padding:12px;
+background:#222;
+color:white;
+border:0;
+border-radius:10px
 }
 
 .status{
-    text-align:center;
-    margin-top:15px;
-    color:#00e676;
+text-align:center;
+margin-top:15px;
+color:#00e676
 }
 
 .rodape{
-    margin-top:40px;
-    color:#777;
-    letter-spacing:4px;
+margin-top:40px;
+color:#777;
+letter-spacing:4px
 }
 </style>
 </head>
@@ -185,25 +175,19 @@ input{
 
 <div id="status" class="status"></div>
 
-<div class="rodape">
-DHUBAI • 2026
-</div>
+<div class="rodape">DHUBAI • 2026</div>
 
 </div>
 </section>
 
-<!-- CADASTRO -->
 <div class="janela" id="cadastro">
 <div class="caixa">
 
 <h2>📄 CADASTRO DHUBAI</h2>
 
 <input id="nome" placeholder="Seu nome">
-
 <input id="nick" placeholder="Seu Nick">
-
 <input id="discord" placeholder="Seu Discord">
-
 <input id="senha" type="password" placeholder="Crie uma senha">
 
 <button class="enviar" onclick="cadastrar()">
@@ -217,23 +201,17 @@ FECHAR
 </div>
 </div>
 
-<!-- LOGIN -->
 <div class="janela" id="login">
 <div class="caixa">
 
 <h2>🔐 LOGIN DHUBAI</h2>
 
 <input id="loginNick" placeholder="Seu Nick">
-
 <input id="loginSenha" type="password" placeholder="Sua senha">
 
-<button class="enviar" onclick="logar()">
-ENTRAR
-</button>
+<button class="enviar" onclick="logar()">ENTRAR</button>
 
-<button class="fechar" onclick="fechar('login')">
-FECHAR
-</button>
+<button class="fechar" onclick="fechar('login')">FECHAR</button>
 
 </div>
 </div>
@@ -241,82 +219,38 @@ FECHAR
 <script>
 
 function abrir(id){
-    document.getElementById(id).style.display="flex";
+document.getElementById(id).style.display="flex";
 }
 
 function fechar(id){
-    document.getElementById(id).style.display="none";
+document.getElementById(id).style.display="none";
 }
 
 function cadastrar(){
 
-    let nome=document.getElementById("nome").value;
-    let nick=document.getElementById("nick").value;
-    let discord=document.getElementById("discord").value;
-    let senha=document.getElementById("senha").value;
+let nome=document.getElementById("nome").value;
+let nick=document.getElementById("nick").value;
+let discord=document.getElementById("discord").value;
+let senha=document.getElementById("senha").value;
 
-    if(!nome || !nick || !discord || !senha){
-        alert("Preencha todos os campos!");
-        return;
-    }
+if(!nome || !nick || !discord || !senha){
+alert("Preencha todos os campos!");
+return;
+}
 
-    localStorage.setItem("dhubai_usuario",JSON.stringify({
-        nome:nome,
-        nick:nick,
-        discord:discord,
-        senha:senha
-    }));
+localStorage.setItem("dhubai_usuario",JSON.stringify({
+nome:nome,
+nick:nick,
+discord:discord,
+senha:senha
+}));
 
-    alert("✅ Cadastro realizado!");
-
-    fechar("cadastro");
+alert("✅ Cadastro realizado!");
+fechar("cadastro");
 }
 
 function logar(){
 
-    let usuario=JSON.parse(localStorage.getItem("dhubai_usuario"));
+let usuario=JSON.parse(localStorage.getItem("dhubai_usuario"));
 
-    if(!usuario){
-        alert("❌ Nenhum cadastro encontrado!");
-        return;
-    }
-
-    let nick=document.getElementById("loginNick").value;
-    let senha=document.getElementById("loginSenha").value;
-
-    if(nick===usuario.nick && senha===usuario.senha){
-
-        alert("✅ Login realizado! Bem-vindo, "+usuario.nick+".");
-
-        fechar("login");
-
-    }else{
-        alert("❌ Nick ou senha incorretos!");
-    }
-}
-
-function ponto(){
-
-    let usuario=JSON.parse(localStorage.getItem("dhubai_usuario"));
-
-    if(!usuario){
-        alert("⚠️ Faça seu cadastro primeiro!");
-        return;
-    }
-
-    let hora=new Date().toLocaleTimeString("pt-BR");
-
-    let pontoAtual=localStorage.getItem("dhubai_ponto");
-
-    if(!pontoAtual){
-
-        localStorage.setItem("dhubai_ponto",hora);
-
-        document.getElementById("status").innerHTML=
-        "🟢 Entrada registrada às "+hora;
-
-        alert("🟢 PONTO DE ENTRADA REGISTRADO!");
-
-    }else{
-
-        localStorage.removeItem("dh
+if(!usuario
